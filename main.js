@@ -15,3 +15,9 @@ console.log(log);
 isNumberInArrayofArrays(0, arr)
 isNumberInArrayofArrays(21, arr)
 isNumberInArrayofArrays(221, arr)
+
+const day = new Date().toLocaleDateString('pl', { weekday:"long"})
+const hours = new Date().toLocaleTimeString()
+
+console.log(`Today is : ${day}`);
+console.log(`Current time is :  ${hours}`);
