@@ -40,22 +40,41 @@
 
 // console.log(students[Math.floor(Math.random()*students.length)]);
 
-const paragraph  = document.querySelector('p')
-let text = 'w3resource   '
-let newText = text
-let letter = ''
+
+// 4.
+// const paragraph  = document.querySelector('p')
+// let text = 'w3resource   '
+// let newText = text
+// let letter = ''
 
 
 
-setInterval(()=>{
-    paragraph.textContent = newText + letter
-    letter = letter + newText.substring(0, 1)
-    newText = newText.substring(1, newText.length)
-    if(newText === ''){
-        newText = text
-        letter = ''
+// setInterval(()=>{
+//     paragraph.textContent = newText + letter
+//     letter = letter + newText.substring(0, 1)
+//     newText = newText.substring(1, newText.length)
+//     if(newText === ''){
+//         newText = text
+//         letter = ''
+//     }
+// },200)
+
+
+// ===============
+// 5.
+// ===============
+
+const arry =[]
+let text = '4#2'
+let newText = ''
+
+for(let i = 0; i<10;i++){
+
+    newText = text.replace('#',i)
+    let newNumber = parseInt(newText)
+    if(newNumber % 3 === 0){
+        arry.push(newNumber)
     }
-},200)
-
-
+}
+console.log(arry);
 
