@@ -64,17 +64,33 @@
 // 5.
 // ===============
 
-const arry =[]
-let text = '4#2'
-let newText = ''
+// const arry =[]
+// let text = '4#2'
+// let newText = ''
 
-for(let i = 0; i<10;i++){
+// for(let i = 0; i<10;i++){
 
-    newText = text.replace('#',i)
-    let newNumber = parseInt(newText)
-    if(newNumber % 3 === 0){
-        arry.push(newNumber)
-    }
-}
-console.log(arry);
+//     newText = text.replace('#',i)
+//     let newNumber = parseInt(newText)
+//     if(newNumber % 3 === 0){
+//         arry.push(newNumber)
+//     }
+// }
+// console.log(arry);
 
+// =====
+// // 6
+// // =====
+
+// let number = '12345'
+// let arr = number.split('')
+// const newArr = []
+// if(arr.length%2===0){
+
+// for(let i = 1;i<arr.length; i = i+2){
+//     let x = arr[i-1]
+//     let y = arr[i]
+//     newArr.push(y,x)
+// }
+// console.log(...newArr);
+// }
