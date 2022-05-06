@@ -36,6 +36,26 @@
 // sayHello(person)
 // ===
 
-const students = ["John", "Bill", "Emma", "Stella", "Rob"]
+// const students = ["John", "Bill", "Emma", "Stella", "Rob"]
 
-console.log(students[Math.floor(Math.random()*students.length)]);
+// console.log(students[Math.floor(Math.random()*students.length)]);
+
+const paragraph  = document.querySelector('p')
+let text = 'w3resource   '
+let newText = text
+let letter = ''
+
+
+
+setInterval(()=>{
+    paragraph.textContent = newText + letter
+    letter = letter + newText.substring(0, 1)
+    newText = newText.substring(1, newText.length)
+    if(newText === ''){
+        newText = text
+        letter = ''
+    }
+},200)
+
+
+
